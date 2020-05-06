@@ -11,6 +11,7 @@ pipeline {
                 sh ("mvn -f P-Geo/pom.xml clean verify")
             }
             
+            
         }
         stage('Ejecutar Pruebas'){
                 steps{
