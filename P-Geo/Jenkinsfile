@@ -37,7 +37,7 @@ pipeline {
                 script{ 
                     try{
                     	sh ("echo ${defTimestamp}")
-                    	publishHTML([allowMissing: true, alwaysLinkToLastBuild: true, keepAll: true, reportDir: "/var/lib/jenkins/workspace/P-RegresionVidaLeyGrupo/target/site/serenity", reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
+                    	publishHTML([allowMissing: true, alwaysLinkToLastBuild: true, keepAll: true, reportDir: "/var/lib/jenkins/workspace/P-Geo/target/site/serenity", reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
                          echo 'Reporte realizado con exito'
                     }
                     catch(ex)
