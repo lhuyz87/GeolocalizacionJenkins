@@ -21,15 +21,10 @@ Feature: Representante Atencion Vehicular
     ###DATOS###@DataPrueba|1@01-RegistrarAtencion
     Examples: 
       |0|usuario|password|placa|telefono|direccion|referencia|mensaje|estado|resultado|
-      |1|usuario.test.geo@gmail.com |Rimac2019#|ABA250|987654321|Avenida juan de arona 780, San isidro|referencia de prueba|Registro realizado con éxito.|Solicitado| |
-      |2|usuario.test.geo@gmail.com |Rimac2019#|ABA251|987654322|tambo real|referencia de prueba|Registro realizado con éxito.|Solicitado| |
-      |3|usuario.test.geo@gmail.com |Rimac2019#|ABA252|987654323|Miraflores|referencia de prueba|Registro realizado con éxito.|Solicitado| |
-      |4|usuario.test.geo@gmail.com |Rimac2019#|ABA253|987654324|Avenida juan de arona 780, San isidro|referencia de prueba|Registro realizado con éxito.|Solicitado| |
-      |5|usuario.test.geo@gmail.com |Rimac2019#|ABA254|987654324|tambo real|referencia de prueba|Registro realizado con éxito.|Solicitado| |
-      |6|usuario.test.geo@gmail.com |Rimac2019#|ABA255|987654322|tambo real|referencia de prueba|Registro realizado con éxito.|Solicitado| |
-      |7|usuario.test.geo@gmail.com |Rimac2019#|ABA256|987654323|Miraflores|referencia de prueba|Registro realizado con éxito.|Solicitado| |
-      |8|usuario.test.geo@gmail.com |Rimac2019#|ABA257|987654324|Avenida juan de arona 780, San isidro|referencia de prueba|Registro realizado con éxito.|Solicitado| |
-      |9|usuario.test.geo@gmail.com |Rimac2019#|ABA258|987654324|tambo real|referencia de prueba|Registro realizado con éxito.|Solicitado| |
+      |6|usuario.test.geo@gmail.com |Rimac2019#|ABA264|987654322|tambo real|referencia de prueba|Registro realizado con �xito.|Solicitado| |
+      |7|usuario.test.geo@gmail.com |Rimac2019#|ABA265|987654323|Miraflores|referencia de prueba|Registro realizado con �xito.|Solicitado| |
+      |8|usuario.test.geo@gmail.com |Rimac2019#|ABA266|987654324|Avenida juan de arona 780, San isidro|referencia de prueba|Registro realizado con �xito.|Solicitado| |
+      |9|usuario.test.geo@gmail.com |Rimac2019#|ABA267|987654324|tambo real|referencia de prueba|Registro realizado con �xito.|Solicitado| |
 
   @RegistrarPlacaEnUso
   Scenario Outline: Registrar placas con atenciones en proceso
@@ -45,12 +40,7 @@ Feature: Representante Atencion Vehicular
     ###DATOS###@DataPrueba|1@01-RegistrarAtencion
     Examples: 
       |0|usuario|password|placa|telefono|direccion|referencia|mensaje|estado|resultado|
-      |1|usuario.test.geo@gmail.com |Rimac2019#|ABA250|987654321|Avenida juan de arona 780, San isidro|referencia de prueba|Registro realizado con éxito.|Solicitado| |
-      |2|usuario.test.geo@gmail.com |Rimac2019#|ABA251|987654322|tambo real|referencia de prueba|Registro realizado con éxito.|Solicitado| |
-      |3|usuario.test.geo@gmail.com |Rimac2019#|ABA252|987654323|Miraflores|referencia de prueba|Registro realizado con éxito.|Solicitado| |
-      |4|usuario.test.geo@gmail.com |Rimac2019#|ABA253|987654324|Avenida juan de arona 780, San isidro|referencia de prueba|Registro realizado con éxito.|Solicitado| |
-      |5|usuario.test.geo@gmail.com |Rimac2019#|ABA254|987654324|tambo real|referencia de prueba|Registro realizado con éxito.|Solicitado| |
-      |6|usuario.test.geo@gmail.com |Rimac2019#|ABA255|987654322|tambo real|referencia de prueba|Registro realizado con éxito.|Solicitado| |
-      |7|usuario.test.geo@gmail.com |Rimac2019#|ABA256|987654323|Miraflores|referencia de prueba|Registro realizado con éxito.|Solicitado| |
-      |8|usuario.test.geo@gmail.com |Rimac2019#|ABA257|987654324|Avenida juan de arona 780, San isidro|referencia de prueba|Registro realizado con éxito.|Solicitado| |
-      |9|usuario.test.geo@gmail.com |Rimac2019#|ABA258|987654324|tambo real|referencia de prueba|Registro realizado con éxito.|Solicitado| |
+      |6|usuario.test.geo@gmail.com |Rimac2019#|ABA264|987654322|tambo real|referencia de prueba|Registro realizado con �xito.|Solicitado| |
+      |7|usuario.test.geo@gmail.com |Rimac2019#|ABA265|987654323|Miraflores|referencia de prueba|Registro realizado con �xito.|Solicitado| |
+      |8|usuario.test.geo@gmail.com |Rimac2019#|ABA266|987654324|Avenida juan de arona 780, San isidro|referencia de prueba|Registro realizado con �xito.|Solicitado| |
+      |9|usuario.test.geo@gmail.com |Rimac2019#|ABA267|987654324|tambo real|referencia de prueba|Registro realizado con �xito.|Solicitado| |

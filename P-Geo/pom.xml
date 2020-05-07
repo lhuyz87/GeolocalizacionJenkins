@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>rimac.test</groupId>
+	<groupId>rimac.procurador</groupId>
 	<artifactId>P-GEO</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
@@ -11,21 +11,18 @@
 	<name>P-GEO</name>
 	<url>http://maven.apache.org</url>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<!-- <serenity.version>2.0.39</serenity.version> -->
-		<!-- <serenity.maven.version>2.0.39</serenity.maven.version> -->
-		<!-- <serenity.cucumber.version>1.9.30</serenity.cucumber.version> -->
-		<serenity.version>2.0.81</serenity.version>
-		<serenity.maven.version>2.0.48</serenity.maven.version>
-		<serenity.cucumber.version>1.9.45</serenity.cucumber.version>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<tags></tags>
-		<parallel.tests>4</parallel.tests>
-		<webdriver.base.url></webdriver.base.url>
-		<argLine>-Xmx128m</argLine>
-	</properties>
+  <properties>
+    <parallel.tests>4</parallel.tests>
+    <serenity.maven.version>2.0.48</serenity.maven.version>
+    <serenity.cucumber.version>1.9.45</serenity.cucumber.version>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <webdriver.base.url></webdriver.base.url>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <serenity.version>2.0.81</serenity.version>
+    <argLine>-Xmx128m</argLine>
+    <tags></tags>
+  </properties>
 
 	<!-- Define the Bintray repos for convenience -->
 	<repositories>
@@ -88,14 +85,14 @@
 			<artifactId>AppGeo</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/AppGeo.jar</systemPath>
+			<systemPath>${project.basedir}/libs/AppGeo.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>rimac.Util</groupId>
 			<artifactId>Util</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/Util.jar</systemPath>
+			<systemPath>${project.basedir}/libs/Util.jar</systemPath>
 		</dependency>
 
 	</dependencies>
@@ -108,20 +105,13 @@
 			</properties> 
 
 	<build>
+	
 		<plugins>
 			<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
 						<version>3.0.0-M4</version>
-						<configuration>
-							<includes>
-							<include>**/**Rimac*.*</include>
-							</includes>
-							<systemProperties>
-								<webdriver.driver>chrome</webdriver.driver>
-							</systemProperties>
-						</configuration>
-					</plugin>
+						</plugin>
 				</plugins>
 			</build>
 		</profile>
@@ -130,6 +120,27 @@
 		
 		<build>
 		<plugins>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M4</version>
+				<configuration>
+					<testFailureIgnore>true</testFailureIgnore>
+					<includes>
+						<include>**/**Rimac**.java</include>
+					</includes>
+					<systemProperties>
+						<webdriver.driver>chrome</webdriver.driver>
+					</systemProperties>
+				</configuration>
+			</plugin>
+			
+			
+			
+			
+			
+			
 			
 			<plugin>
 				<artifactId>maven-failsafe-plugin</artifactId>
