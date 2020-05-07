@@ -8,7 +8,7 @@ import rimac.test.util.ExcelUtilPropio;
 @RunWith(RunPersonalizar.class)
 
 //@CucumberOptions(features = { "src/test/resources/features/" }, tags = { "@CopiarPlantillas" }, glue = { "rimac" })
-@CucumberOptions(features = { "src/test/resources/features/" }, tags = {"@RegistrarNuevoCaso"}, glue = { "rimac" })
+//@CucumberOptions(features = { "src/test/resources/features/" }, tags = {"@RegistrarNuevoCaso"}, glue = { "rimac" })
 //@CucumberOptions(features = { "src/test/resources/features/" }, tags = {"@CopiarPlantillas"}, glue = { "rimac.test.definition" })
 //@CucumberOptions(features = { "src/test/resources/features/" }, tags = {"@RegistrarPlacaEnUso"}, glue = { "rimac" })
 //@CucumberOptions(features = { "src/test/resources/features/" }, tags = {"@AsignarProcurador"}, glue = { "rimac" })
